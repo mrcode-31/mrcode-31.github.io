@@ -3,24 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohit Gupta - Software Developer</title>
+    <title>Mohit Gupta — Full-Stack Developer & CS Student</title>
+    <meta name="description" content="Portfolio of Mohit Gupta — B.Tech IT student at VIT Vellore, Full-Stack Developer specialising in MERN stack, AI integrations, and competitive programming.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="container">
-            <div class="nav-brand">Mohit Gupta</div>
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <div class="nav-brand">
+                <span class="brand-icon">&lt;/&gt;</span>
+                <span>mrcode<span class="brand-accent">-31</span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="hamburger">
+            <a href="https://github.com/mrcode-31" target="_blank" class="nav-cta" id="navGithubBtn">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <div class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -29,65 +39,162 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section class="hero" id="home">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Hi, I'm <span class="highlight">Mohit Gupta</span></h1>
-                <p class="hero-subtitle">Software Developer | B.Tech Student at VIT Vellore</p>
+                <div class="hero-badge">
+                    <span class="pulse-dot"></span>
+                    Open to Opportunities
+                </div>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight gradient-text">Mohit Gupta</span>
+                </h1>
+                <p class="hero-subtitle" id="heroSubtitle">Full-Stack Developer &amp; B.Tech IT Student at VIT Vellore</p>
                 <p class="hero-description">
-                    Passionate about building innovative solutions with modern technologies.
-                    Specializing in Full-Stack Development, Data Structures & Algorithms.
+                    Crafting intelligent, scalable web applications — from AI-powered finance trackers to real-time collaboration platforms. 
+                    Passionate about clean code, great UX, and solving hard problems.
                 </p>
+                <div class="hero-stats-row">
+                    <div class="hero-stat">
+                        <span class="hero-stat-num">9.66</span>
+                        <span class="hero-stat-label">CGPA</span>
+                    </div>
+                    <div class="hero-stat-divider"></div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-num">155+</span>
+                        <span class="hero-stat-label">LeetCode</span>
+                    </div>
+                    <div class="hero-stat-divider"></div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-num">9</span>
+                        <span class="hero-stat-label">Projects</span>
+                    </div>
+                </div>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-primary" id="viewWorkBtn">
+                        <i class="fas fa-rocket"></i> View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-secondary" id="getInTouchBtn">
+                        <i class="fas fa-paper-plane"></i> Get In Touch
+                    </a>
+                    <a href="https://github.com/mrcode-31" target="_blank" class="btn btn-ghost" id="githubProfileBtn">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
                 </div>
                 <div class="social-links">
-                    <a href="https://github.com/mrcode-31" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://leetcode.com" target="_blank"><i class="fas fa-code"></i></a>
-                    <a href="https://www.hackerrank.com" target="_blank"><i class="fab fa-hackerrank"></i></a>
+                    <a href="https://github.com/mrcode-31" target="_blank" title="GitHub" id="heroGithubLink">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:mohitgupta4547@gmail.com" title="Email" id="heroEmailLink">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mohit-gupta-mrcode/" target="_blank" title="LinkedIn" id="heroLinkedinLink">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="tel:+919827672500" title="Phone" id="heroPhoneLink">
+                        <i class="fas fa-phone"></i>
+                    </a>
                 </div>
             </div>
+            <div class="hero-visual">
+                <div class="code-card" id="codeCard">
+                    <div class="code-header">
+                        <div class="code-dot red"></div>
+                        <div class="code-dot yellow"></div>
+                        <div class="code-dot green"></div>
+                        <span class="code-filename">mohit.js</span>
+                    </div>
+                    <pre class="code-body"><code><span class="kw">const</span> <span class="var">developer</span> = {
+  <span class="key">name</span>: <span class="str">"Mohit Gupta"</span>,
+  <span class="key">role</span>: <span class="str">"Full-Stack Developer"</span>,
+  <span class="key">university</span>: <span class="str">"VIT Vellore"</span>,
+  <span class="key">cgpa</span>: <span class="num">9.66</span>,
+  <span class="key">stack</span>: [<span class="str">"React"</span>, <span class="str">"Node"</span>, <span class="str">"MongoDB"</span>],
+  <span class="key">passion</span>: <span class="str">"Building cool things 🚀"</span>,
+  <span class="key">available</span>: <span class="bool">true</span>
+};</code></pre>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll</span>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="#0f0f1a"></path>
+            </svg>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section class="about" id="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
+            <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+            <div class="about-grid">
                 <div class="about-text">
                     <p>
-                        I'm a driven and technically proficient second-year B.Tech Information Technology student
-                        at VIT Vellore with a CGPA of 9.66. I have a solid foundation in Data Structures,
-                        Algorithms, and software development.
+                        I'm a passionate <strong>second-year B.Tech Information Technology</strong> student at 
+                        <strong>VIT Vellore</strong>, maintaining a CGPA of <strong>9.66</strong>. I build full-stack 
+                        web applications with a strong focus on clean architecture, intuitive UI, and real-world impact.
                     </p>
                     <p>
-                        Skilled in C++, Python, JavaScript, and modern web technologies including React, Node.js,
-                        and SQL, with hands-on experience in building full-stack and console-based applications.
+                        My expertise spans the entire MERN stack — from crafting RESTful APIs and integrating AI/ML 
+                        models on the backend, to building reactive and accessible frontends. I'm also actively engaged 
+                        in competitive programming on LeetCode, HackerRank, and Codeforces.
                     </p>
                     <p>
-                        I'm actively engaged in competitive programming across LeetCode, HackerRank, and Codeforces,
-                        and serve as the Batch Public Relations (PR) Representative and Junior Core Member of the
-                        Mozilla Firefox Club.
+                        Beyond coding, I serve as the <strong>Batch PR Representative</strong> and 
+                        <strong>Junior Core Member of the Mozilla Firefox Club</strong>, where I contribute to 
+                        technical initiatives and community events.
                     </p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <h3>9.66</h3>
-                            <p>CGPA</p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>B.Tech IT, VIT Vellore (2024–2028)</span>
                         </div>
-                        <div class="stat">
-                            <h3>905</h3>
+                        <div class="highlight-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Vellore, Tamil Nadu, India</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-code"></i>
+                            <span>Full-Stack &amp; AI/ML Enthusiast</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-trophy"></i>
+                            <span>Mozilla Firefox Club, Junior Core Member</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats-col">
+                    <div class="about-stats">
+                        <div class="stat" id="statCgpa">
+                            <div class="stat-icon"><i class="fas fa-star"></i></div>
+                            <h3 data-target="9.66" data-decimal="2">9.66</h3>
+                            <p>CGPA at VIT</p>
+                        </div>
+                        <div class="stat" id="statCf">
+                            <div class="stat-icon"><i class="fas fa-code"></i></div>
+                            <h3 data-target="905">905</h3>
                             <p>Codeforces Rating</p>
                         </div>
-                        <div class="stat">
-                            <h3>4★</h3>
-                            <p>HackerRank C++</p>
-                        </div>
-                        <div class="stat">
+                        <div class="stat" id="statLc">
+                            <div class="stat-icon"><i class="fas fa-brain"></i></div>
                             <h3>155+</h3>
                             <p>LeetCode Problems</p>
+                        </div>
+                        <div class="stat" id="statHr">
+                            <div class="stat-icon"><i class="fas fa-award"></i></div>
+                            <h3>4★</h3>
+                            <p>HackerRank C++</p>
                         </div>
                     </div>
                 </div>
@@ -96,55 +203,76 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <section class="skills" id="skills">
         <div class="container">
-            <h2 class="section-title">Skills & Technologies</h2>
+            <h2 class="section-title">Skills &amp; <span class="gradient-text">Technologies</span></h2>
             <div class="skills-grid">
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                <div class="skill-category" id="skillLangs">
+                    <h3><i class="fas fa-terminal"></i> Programming Languages</h3>
                     <div class="skill-tags">
                         <span class="tag">C++</span>
                         <span class="tag">Java</span>
                         <span class="tag">Python</span>
                         <span class="tag">JavaScript</span>
-                        <span class="tag">HTML</span>
-                        <span class="tag">CSS</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">C</span>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-laptop-code"></i> Frameworks & Libraries</h3>
+                <div class="skill-category" id="skillFrameworks">
+                    <h3><i class="fas fa-layer-group"></i> Frameworks &amp; Libraries</h3>
                     <div class="skill-tags">
-                        <span class="tag">React</span>
+                        <span class="tag">React.js</span>
                         <span class="tag">Node.js</span>
                         <span class="tag">Express.js</span>
+                        <span class="tag">Next.js</span>
                         <span class="tag">Tailwind CSS</span>
                         <span class="tag">NumPy</span>
                         <span class="tag">Pandas</span>
+                        <span class="tag">Bootstrap</span>
                     </div>
                 </div>
-                <div class="skill-category">
+                <div class="skill-category" id="skillDbs">
                     <h3><i class="fas fa-database"></i> Databases</h3>
                     <div class="skill-tags">
                         <span class="tag">MongoDB</span>
-                        <span class="tag">SQL</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Mongoose</span>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
+                <div class="skill-category" id="skillTools">
+                    <h3><i class="fas fa-tools"></i> Tools &amp; Platforms</h3>
                     <div class="skill-tags">
+                        <span class="tag">Git &amp; GitHub</span>
                         <span class="tag">VS Code</span>
-                        <span class="tag">GitHub</span>
-                        <span class="tag">Git</span>
                         <span class="tag">Postman</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">JWT</span>
+                        <span class="tag">REST APIs</span>
+                        <span class="tag">Nodemailer</span>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-brain"></i> Core Concepts</h3>
+                <div class="skill-category" id="skillAI">
+                    <h3><i class="fas fa-robot"></i> AI &amp; Integrations</h3>
                     <div class="skill-tags">
-                        <span class="tag">Data Structures</span>
-                        <span class="tag">Algorithms</span>
+                        <span class="tag">Google Gemini API</span>
+                        <span class="tag">OpenAI API</span>
+                        <span class="tag">Multer (File Upload)</span>
+                        <span class="tag">OCR Integration</span>
+                        <span class="tag">Email Automation</span>
+                    </div>
+                </div>
+                <div class="skill-category" id="skillConcepts">
+                    <h3><i class="fas fa-sitemap"></i> Core Concepts</h3>
+                    <div class="skill-tags">
                         <span class="tag">OOP</span>
-                        <span class="tag">Problem Solving</span>
+                        <span class="tag">Data Structures &amp; Algorithms</span>
+                        <span class="tag">REST Architecture</span>
+                        <span class="tag">MVC Pattern</span>
+                        <span class="tag">Competitive Programming</span>
+                        <span class="tag">System Design</span>
                     </div>
                 </div>
             </div>
@@ -152,176 +280,338 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <section class="projects" id="projects">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+            <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+            <p class="section-subtitle">A selection of my recent work — from AI-powered applications to full-stack platforms.</p>
             <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
+
+                <!-- Project 1: Smart Expense Tracker -->
+                <div class="project-card featured" id="projectExpense">
+                    <div class="project-badge">⭐ Featured</div>
                     <div class="project-header">
-                        <h3>Task Collaboration Platform</h3>
-                        <a href="https://github.com/mrcode-31/task_collab" target="_blank" class="project-link">
-                            <i class="fab fa-github"></i>
-                        </a>
+                        <div class="project-icon">💰</div>
+                        <div class="project-links">
+                            <a href="https://github.com/mrcode-31/Smart-Expense-Tracker" target="_blank" class="project-link" title="View on GitHub" id="expenseGithub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
                     </div>
+                    <h3>Smart Expense Tracker</h3>
                     <p class="project-description">
-                        Full-stack task and project management application built with the MERN stack.
-                        Features JWT authentication, RESTful API, and responsive UI.
+                        A comprehensive AI-powered expense management system with real-time multi-currency tracking, 
+                        receipt scanning via AI, Indian tax (GST &amp; Income Tax) calculations, budget management, 
+                        trip expense tracking, and automated email alerts.
                     </p>
                     <div class="project-tech">
-                        <span>React</span>
                         <span>Node.js</span>
-                        <span>Express</span>
+                        <span>Express.js</span>
                         <span>MongoDB</span>
-                        <span>TypeScript</span>
+                        <span>React</span>
+                        <span>Google Gemini AI</span>
+                        <span>JWT</span>
+                        <span>Nodemailer</span>
                     </div>
                     <div class="project-features">
-                        <p>✓ User authentication with JWT</p>
-                        <p>✓ Task & project management</p></p>
-                        <p>✓ Responsive design with TailwindCSS</p>
+                        <p><i class="fas fa-check"></i> AI receipt scanning &amp; OCR</p>
+                        <p><i class="fas fa-check"></i> Real-time currency conversion (20+ currencies)</p>
+                        <p><i class="fas fa-check"></i> Indian Tax / GST analysis module</p>
+                        <p><i class="fas fa-check"></i> Budget &amp; subscription alert system</p>
                     </div>
                 </div>
 
-                <!-- Project 2 -->
-                <div class="project-card">
+                <!-- Project 2: AI Smart Finance Tracker -->
+                <div class="project-card featured" id="projectAIFinance">
+                    <div class="project-badge">🤖 AI-Powered</div>
                     <div class="project-header">
-                        <h3>Discord Bot Using Python</h3>
-                        <a href="#" class="project-link">
-                            <i class="fab fa-github"></i>
-                        </a>
+                        <div class="project-icon">📊</div>
+                        <div class="project-links">
+                            <a href="https://github.com/mrcode-31/AI-SMART-FINANCE-TRACKER-SYSTEM" target="_blank" class="project-link" title="View on GitHub" id="aiFinanceGithub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
                     </div>
+                    <h3>AI Smart Finance Tracker</h3>
                     <p class="project-description">
-                        Python-based Discord chatbot for automated message and command responses with
-                        real-time interaction capabilities.
+                        An intelligent finance management platform powered by AI that analyses spending patterns, 
+                        generates personalized savings recommendations, tracks investments, and provides predictive 
+                        financial insights using machine learning techniques.
+                    </p>
+                    <div class="project-tech">
+                        <span>JavaScript</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>AI/ML APIs</span>
+                        <span>Express.js</span>
+                    </div>
+                    <div class="project-features">
+                        <p><i class="fas fa-check"></i> AI-driven spending pattern analysis</p>
+                        <p><i class="fas fa-check"></i> Personalized financial recommendations</p>
+                        <p><i class="fas fa-check"></i> Predictive savings insights</p>
+                        <p><i class="fas fa-check"></i> Investment portfolio tracking</p>
+                    </div>
+                </div>
+
+                <!-- Project 3: Task Collaboration Platform -->
+                <div class="project-card" id="projectTask">
+                    <div class="project-header">
+                        <div class="project-icon">🤝</div>
+                        <div class="project-links">
+                            <a href="https://github.com/mrcode-31/task_collab" target="_blank" class="project-link" title="View on GitHub" id="taskGithub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3>Task Collaboration Platform</h3>
+                    <p class="project-description">
+                        A full-stack task and project management application built with the MERN stack and TypeScript. 
+                        Enables real-time team collaboration, task assignment, progress tracking, and project management 
+                        with secure JWT authentication.
+                    </p>
+                    <div class="project-tech">
+                        <span>TypeScript</span>
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>JWT</span>
+                        <span>TailwindCSS</span>
+                    </div>
+                    <div class="project-features">
+                        <p><i class="fas fa-check"></i> Real-time task management</p>
+                        <p><i class="fas fa-check"></i> Team collaboration features</p>
+                        <p><i class="fas fa-check"></i> JWT authentication &amp; authorization</p>
+                    </div>
+                </div>
+
+                <!-- Project 4: Verification Identification System -->
+                <div class="project-card" id="projectVerif">
+                    <div class="project-header">
+                        <div class="project-icon">🔐</div>
+                        <div class="project-links">
+                            <a href="https://github.com/mrcode-31/verification-identification-system" target="_blank" class="project-link" title="View on GitHub" id="verifGithub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3>Verification &amp; Identification System</h3>
+                    <p class="project-description">
+                        A robust identity verification and user identification system with multi-factor authentication, 
+                        secure data handling, and streamlined user management workflows. Built with JavaScript and 
+                        modern security best practices.
+                    </p>
+                    <div class="project-tech">
+                        <span>JavaScript</span>
+                        <span>Node.js</span>
+                        <span>Express.js</span>
+                        <span>MongoDB</span>
+                        <span>JWT</span>
+                    </div>
+                    <div class="project-features">
+                        <p><i class="fas fa-check"></i> Multi-step user verification</p>
+                        <p><i class="fas fa-check"></i> Secure authentication flows</p>
+                        <p><i class="fas fa-check"></i> Identity management system</p>
+                    </div>
+                </div>
+
+                <!-- Project 5: GDSC Bot -->
+                <div class="project-card" id="projectGdsc">
+                    <div class="project-header">
+                        <div class="project-icon">🤖</div>
+                        <div class="project-links">
+                            <a href="https://github.com/mrcode-31/GDSC-BOT" target="_blank" class="project-link" title="View on GitHub" id="gdscGithub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3>GDSC Discord Bot</h3>
+                    <p class="project-description">
+                        A feature-rich Discord bot built for the Google Developer Student Club. Automates event 
+                        announcements, member onboarding, command handling, and community engagement with real-time 
+                        interaction capabilities.
                     </p>
                     <div class="project-tech">
                         <span>Python</span>
-                        <span>Discord API</span>
-                        <span>Event-Driven</span>
+                        <span>Discord.py</span>
+                        <span>Async APIs</span>
                     </div>
                     <div class="project-features">
-                        <p>✓ Automated message responses</p>
-                        <p>✓ Real-time command handling</p>
-                        <p>✓ Interactive bot features</p>
+                        <p><i class="fas fa-check"></i> Automated event announcements</p>
+                        <p><i class="fas fa-check"></i> Member onboarding automation</p>
+                        <p><i class="fas fa-check"></i> Real-time command handling</p>
                     </div>
                 </div>
 
-                <!-- Project 3 -->
-                <div class="project-card">
+                <!-- Project 6: Library Management System -->
+                <div class="project-card" id="projectLib">
                     <div class="project-header">
-                        <h3>Library Management System</h3>
-                        <a href="#" class="project-link">
-                            <i class="fab fa-github"></i>
-                        </a>
+                        <div class="project-icon">📚</div>
+                        <div class="project-links">
+                            <a href="https://github.com/mrcode-31/LIBRARY-MANAGEMENT-SYSTEM" target="_blank" class="project-link" title="View on GitHub" id="libGithub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
                     </div>
+                    <h3>Library Management System</h3>
                     <p class="project-description">
-                        Console-based Library Management System in C with efficient data structures
-                        for book and member management.
+                        A console-based Library Management System written in C featuring efficient data structures 
+                        for book and member record management, with search, borrow/return tracking, and input 
+                        validation — a strong foundation in systems programming.
                     </p>
                     <div class="project-tech">
                         <span>C</span>
                         <span>Data Structures</span>
-                        <span>File Handling</span>
+                        <span>File I/O</span>
                     </div>
                     <div class="project-features">
-                        <p>✓ Menu-driven interface</p>
-                        <p>✓ Efficient record management</p>
-                        <p>✓ Input validation & search</p>
+                        <p><i class="fas fa-check"></i> Menu-driven interface</p>
+                        <p><i class="fas fa-check"></i> Book &amp; member record management</p>
+                        <p><i class="fas fa-check"></i> Search &amp; borrow/return system</p>
                     </div>
                 </div>
+
+            </div>
+            <div class="projects-cta">
+                <a href="https://github.com/mrcode-31?tab=repositories" target="_blank" class="btn btn-outline-dark" id="viewAllReposBtn">
+                    <i class="fab fa-github"></i> View All Repositories
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Achievements Section -->
-    <section id="achievements" class="achievements">
+    <section class="achievements" id="achievements">
         <div class="container">
-            <h2 class="section-title">Achievements & Leadership</h2>
+            <h2 class="section-title">Achievements &amp; <span class="gradient-text">Leadership</span></h2>
             <div class="achievements-grid">
-                <div class="achievement-card">
+                <div class="achievement-card" id="achBatch">
                     <div class="achievement-icon">
                         <i class="fas fa-users"></i>
                     </div>
                     <h3>Batch PR Representative</h3>
-                    <p>Coordinating communication and updates between students and the school/department administration</p>
+                    <p>Coordinating communication and updates between students and the department administration at VIT Vellore, representing the batch at key institutional events.</p>
                 </div>
-                <div class="achievement-card">
+                <div class="achievement-card" id="achMozilla">
                     <div class="achievement-icon">
-                        <i class="fab fa-firefox"></i>
+                        <i class="fab fa-firefox-browser"></i>
                     </div>
                     <h3>Mozilla Firefox Club</h3>
-                    <p>Junior Core Member, contributing to technical initiatives, events, and community-driven activities</p>
+                    <p>Junior Core Member, actively contributing to technical initiatives, open-source advocacy, developer workshops, and community-driven activities at VIT.</p>
                 </div>
-                <div class="achievement-card">
+                <div class="achievement-card" id="achAcademic">
                     <div class="achievement-icon">
                         <i class="fas fa-graduation-cap"></i>
                     </div>
                     <h3>Academic Excellence</h3>
-                    <p>Maintained an excellent academic record with a CGPA of 9.66 in B.Tech Information Technology at VIT Vellore</p>
+                    <p>Maintained an exceptional CGPA of <strong>9.66</strong> in B.Tech Information Technology at VIT Vellore, consistently ranking among top performers.</p>
                 </div>
-                <div class="achievement-card">
+                <div class="achievement-card" id="achCP">
                     <div class="achievement-icon">
-                        <i class="fas fa-trophy"></i>
+                        <i class="fas fa-code"></i>
                     </div>
                     <h3>Competitive Programming</h3>
-                    <p>Solved 155+ problems on LeetCode, 4-star rating in C++ on HackerRank, Codeforces rating: 905</p>
+                    <p>Solved <strong>155+ problems</strong> on LeetCode, earned a <strong>4-star rating in C++</strong> on HackerRank, and achieved a <strong>Codeforces rating of 905</strong>.</p>
+                </div>
+            </div>
+
+            <!-- Coding profiles -->
+            <div class="coding-profiles">
+                <h3 class="profiles-title">Coding Profiles</h3>
+                <div class="profiles-grid">
+                    <a href="https://leetcode.com/" target="_blank" class="profile-card" id="lcProfile">
+                        <div class="profile-logo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode" onerror="this.parentElement.innerHTML='LC'">
+                        </div>
+                        <div class="profile-info">
+                            <h4>LeetCode</h4>
+                            <p>155+ Problems Solved</p>
+                        </div>
+                        <i class="fas fa-external-link-alt profile-arrow"></i>
+                    </a>
+                    <a href="https://codeforces.com/" target="_blank" class="profile-card" id="cfProfile">
+                        <div class="profile-logo cf">CF</div>
+                        <div class="profile-info">
+                            <h4>Codeforces</h4>
+                            <p>Rating: 905</p>
+                        </div>
+                        <i class="fas fa-external-link-alt profile-arrow"></i>
+                    </a>
+                    <a href="https://www.hackerrank.com/" target="_blank" class="profile-card" id="hrProfile">
+                        <div class="profile-logo hr">HR</div>
+                        <div class="profile-info">
+                            <h4>HackerRank</h4>
+                            <p>4★ in C++</p>
+                        </div>
+                        <i class="fas fa-external-link-alt profile-arrow"></i>
+                    </a>
+                    <a href="https://github.com/mrcode-31" target="_blank" class="profile-card" id="ghProfile">
+                        <div class="profile-logo gh"><i class="fab fa-github"></i></div>
+                        <div class="profile-info">
+                            <h4>GitHub</h4>
+                            <p>9+ Public Repositories</p>
+                        </div>
+                        <i class="fas fa-external-link-alt profile-arrow"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section class="contact" id="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
+            <h2 class="section-title">Get In <span class="gradient-text-light">Touch</span></h2>
+            <p class="contact-intro">
+                I'm always open to discussing new projects, internship opportunities, or just a good conversation about tech.
+            </p>
             <div class="contact-content">
                 <div class="contact-info">
                     <h3>Let's Connect!</h3>
-                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision</p>.</p>
+                    <p>Whether you have a project in mind, want to collaborate, or just want to say hi — my inbox is always open.</p>
                     <div class="contact-details">
-                        <div class="contact-item">
+                        <div class="contact-item" id="contactEmail">
                             <i class="fas fa-envelope"></i>
                             <div>
                                 <h4>Email</h4>
                                 <a href="mailto:mohitgupta4547@gmail.com">mohitgupta4547@gmail.com</a>
                             </div>
                         </div>
-                        <div class="contact-item">
+                        <div class="contact-item" id="contactPhone">
                             <i class="fas fa-phone"></i>
                             <div>
                                 <h4>Phone</h4>
                                 <a href="tel:+919827672500">+91 9827672500</a>
                             </div>
                         </div>
-                        <div class="contact-item">
+                        <div class="contact-item" id="contactLocation">
                             <i class="fas fa-map-marker-alt"></i>
                             <div>
                                 <h4>Location</h4>
-                                <p>Vellore, India</p>
+                                <p>Vellore, Tamil Nadu, India</p>
                             </div>
                         </div>
                     </div>
                     <div class="social-links-large">
-                        <a href="https://github.com/mrcode-31" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" target="_blank"><i class="fas fa-code"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-hackerrank"></i></a>
+                        <a href="https://github.com/mrcode-31" target="_blank" title="GitHub" id="contactGithub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/mohit-gupta-mrcode/" target="_blank" title="LinkedIn" id="contactLinkedin"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:mohitgupta4547@gmail.com" title="Email" id="contactEmailIcon"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
-                <form class="contact-form">
+                <form class="contact-form" id="contactForm">
                     <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
+                        <input type="text" id="formName" name="name" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
+                        <input type="email" id="formEmail" name="email" placeholder="Your Email" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" placeholder="Subject" required>
+                        <input type="text" id="formSubject" name="subject" placeholder="Subject" required>
                     </div>
                     <div class="form-group">
-                        <textarea rows="5" placeholder="Your Message" required></textarea>
+                        <textarea id="formMessage" name="message" placeholder="Your Message" rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <button type="submit" class="btn btn-contact-submit" id="submitContactBtn">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
                 </form>
             </div>
         </div>
@@ -330,8 +620,20 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Mohit Gupta. All rights reserved.</p>
-            <p>Built with passion and dedication</p>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="brand-icon">&lt;/&gt;</span>
+                    <span>Mohit Gupta</span>
+                </div>
+                <p class="footer-tagline">Building meaningful software, one commit at a time.</p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <p class="footer-copy">© 2025 Mohit Gupta. All rights reserved. | Built with passion &amp; dedication 🚀</p>
+            </div>
         </div>
     </footer>
 
